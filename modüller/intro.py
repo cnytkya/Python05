@@ -1,0 +1,3 @@
+#Modüller: Modül, aslında içinde python kodları(fonksiyonlar,class(sınıf),değişkenler vb.) bulunan bir .py dosyasıdır. Amacı, kodumuzun daha düzenli ve tekrar kullanılabilir hale getirmektir.
+
+#1.Kendi modlümüzü oluşturalım: Bir modül oluşturmak bir py dosyası yaratmak kadar kolaydır. Diyelim ki, matematiskel işlemler için kullanacağımzı bir modül yazmak istiyoruz. Bunun için matematik.py adında bir dosya oluşturalım.
