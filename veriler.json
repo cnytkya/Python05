@@ -1,0 +1,61 @@
+{
+    "ogrenciler": [
+        {
+            "ad": "Kenan",
+            "soyad": "Yılmaz",
+            "yas": 22,
+            "ogr_no": "10",
+            "notlar": {
+                "Mat": 95
+            }
+        },
+        {
+            "ad": "Sezin",
+            "soyad": "Kaya",
+            "yas": 18,
+            "ogr_no": "22",
+            "notlar": {
+                "Mat": 100
+            }
+        }
+    ],
+    "ogretmenler": [
+        {
+            "ad": "Ahmet",
+            "soyad": "Şafak",
+            "yas": 55,
+            "brans": "Mat"
+        }
+    ],
+    "dersler": [
+        {
+            "ad": "Mat",
+            "ogretmen": {
+                "ad": "Ahmet",
+                "soyad": "Şafak",
+                "yas": 55,
+                "brans": "Mat"
+            },
+            "ogrenciler": [
+                {
+                    "ad": "Kenan",
+                    "soyad": "Yılmaz",
+                    "yas": 22,
+                    "ogr_no": "10",
+                    "notlar": {
+                        "Mat": 95
+                    }
+                },
+                {
+                    "ad": "Sezin",
+                    "soyad": "Kaya",
+                    "yas": 18,
+                    "ogr_no": "22",
+                    "notlar": {
+                        "Mat": 100
+                    }
+                }
+            ]
+        }
+    ]
+}

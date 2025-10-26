@@ -1,0 +1,25 @@
+﻿@model Category
+
+@{
+    ViewData["Title"] = "Yeni Kategori";
+}
+
+<h1>Yeni Kategori</h1>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Create">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <textarea asp-for="Name" class="form-control" ></textarea>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <br />
+            <div class="form-group">
+                <input type="submit" value="Oluştur" class="btn btn-success" />
+                <a asp-action="Index" class="btn btn-secondary">Listeye Dön</a>
+            </div>
+        </form>
+    </div>
+</div>

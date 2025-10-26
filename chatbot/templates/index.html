@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chatbot Uygulaması</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            max-width: 500px;
+            margin: auto;
+            padding: 20px;
+            background-color: #f4f4f9;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .chat-container {
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            padding: 10px;
+            height: 350px;
+            overflow-y: auto;
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+        }
+        .mesaj-form {
+            margin-top: 15px;
+            display: flex;
+        }
+        .mesaj-form input {
+            flex-grow: 1;
+            margin-right: 10px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .mesaj-form button {
+            padding: 10px 15px;
+            border: none;
+            background-color: #007bff;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .mesaj-form button:hover {
+            background-color: #0056b3;
+        }
+        .mesaj {
+            padding: 8px 12px;
+            border-radius: 15px;
+            margin-bottom: 8px;
+            max-width: 70%;
+            line-height: 1.4;
+        }
+        .siz {
+            background-color: #007bff;
+            color: white;
+            align-self: flex-end; /* Mesajı sağa yaslar */
+            text-align: right;
+        }
+        .bot {
+            background-color: #e9e9eb;
+            color: black;
+            align-self: flex-start; /* Mesajı sola yaslar */
+            text-align: left;
+        }
+        .temizle-link {
+            display: block;
+            text-align: center;
+            margin-top: 15px;
+            color: #666;
+            text-decoration: none;
+        }
+        .temizle-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Chatbot</h1>
+    <div class="chat-container" id="chat_box">
+        {% for mesaj in gecmis %} 
+            {% if mesaj.kisi == 'Bot'%}
+                <p class="mesaj bot"><strong>Bot:</strong> {{ mesaj.mesaj }}</p>
+            {% else %}
+                <!-- DÜZELTME 2: 'cevap' yerine 'mesaj.mesaj' kullanıldı. -->
+                <!-- Artık döngüdeki doğru mesaj verisi gösteriliyor. -->
+                <p class="mesaj siz"><strong>Siz:</strong> {{ mesaj.mesaj }}</p>
+            {% endif %}
+        {% endfor %}
+    </div>
+
+    <form method="POST" class="mesaj-form">
+        <input type="text" name="mesaj_kutusu" placeholder="Mesajınızı yazınız..." size="50" autofocus autocomplete="off">
+        <button type="submit">Gönder</button>
+    </form>
+
+    <p>
+        <a href="/temizle" class="temizle-link">Sohbet Geçmişini Temizle</a>
+    </p>
+
+    <script>
+        // Bu script, sohbet kutusunu her zaman en alta kaydırır.
+        var chatBox = document.getElementById('chat_box');
+        chatBox.scrollTop = chatBox.scrollHeight;
+    </script>
+</body>
+</html>

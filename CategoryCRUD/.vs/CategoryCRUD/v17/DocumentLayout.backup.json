@@ -1,0 +1,125 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\views\\category\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\views\\category\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\views\\category\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\views\\category\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|c:\\users\\kayac\\smprtech\\haftasonu\\python05\\categorycrud\\categorycrud\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{51398642-EC60-465C-906A-0253A0188BD5}|CategoryCRUD\\CategoryCRUD.csproj|solutionrelative:categorycrud\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Controllers\\CategoryController.cs",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "CategoryCRUD\\Controllers\\CategoryController.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAswHoAAAAwAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T11:55:22.423Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Index.cshtml",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Views\\Category\\Index.cshtml",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Index.cshtml",
+              "RelativeToolTip": "CategoryCRUD\\Views\\Category\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T11:58:21.152Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Create.cshtml",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Views\\Category\\Create.cshtml",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Create.cshtml",
+              "RelativeToolTip": "CategoryCRUD\\Views\\Category\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T13:40:59.727Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Delete.cshtml",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Views\\Category\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Delete.cshtml",
+              "RelativeToolTip": "CategoryCRUD\\Views\\Category\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T14:20:15.812Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Edit.cshtml",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Views\\Category\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Views\\Category\\Edit.cshtml",
+              "RelativeToolTip": "CategoryCRUD\\Views\\Category\\Edit.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-10-18T14:13:56.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Category.cs",
+              "DocumentMoniker": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "CategoryCRUD\\Models\\Category.cs",
+              "ToolTip": "C:\\Users\\kayac\\SmprTech\\Haftasonu\\Python05\\CategoryCRUD\\CategoryCRUD\\Models\\Category.cs",
+              "RelativeToolTip": "CategoryCRUD\\Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T13:52:50.228Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

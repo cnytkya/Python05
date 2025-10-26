@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h1>Ürün Listesi</h1>
+    <a href="{{ url_for('add_product') }}" class="add-link">Yeni Ürün Ekle</a>
+    
+    <table>
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Ürün Adı</th>
+                <th>Fiyat</th>
+                <th>İşlemler</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for product in products %}
+            <tr>
+                <td>{{ product.id }}</td>
+                <td>{{ product.name }}</td>
+                <td>₺{{ "%.2f"|format(product.price) }}</td>
+                <td class="actions">
+                    <a href="{{ url_for('edit_product', product_id=product.id) }}">Düzenle</a>
+                    
+                    <form action="{{ url_for('delete_product', product_id=product.id) }}" method="POST">
+                        <button type="submit">Sil</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endblock %}

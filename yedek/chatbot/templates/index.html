@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <title>Chatbot Projesi</title>
+    <style>
+        body { font-family: sans-serif; max-width: 500px; margin: auto; padding: 20px; }
+        /* Chat kutusunu biraz daha güzelleştirelim */
+        .chat-container { 
+            border: 1px solid #ccc; 
+            padding: 10px; 
+            height: 300px; /* Sabit yükseklik */
+            overflow-y: auto; /* Taşarsa kaydırma çubuğu çıksın */
+            background-color: #f9f9f9;
+        }
+        .mesaj-form { margin-top: 15px; display: flex; }
+        .mesaj-form input { flex-grow: 1; margin-right: 10px; } /* Input kutusu genişlesin */
+        
+        /* Mesajları ayırt edelim */
+        .mesaj { margin: 5px 0; }
+        .siz { color: blue; text-align: right; } /* Kendi mesajlarımız sağda */
+        .bot { color: green; text-align: left; } /* Bot mesajları solda */
+    </style>
+</head>
+<body>
+    <h1>Python Chatbot</h1>
+    
+    <div class="chat-container" id="chat-box">
+        {% for mesaj in gecmis %}
+            {% if mesaj.kisi == 'Bot' %}
+                <p class="mesaj bot"><strong>Bot:</strong> {{ mesaj.mesaj }}</p>
+            {% else %}
+                <p class="mesaj siz"><strong>Siz:</strong> {{ mesaj.mesaj }}</p>
+            {% endif %}
+        {% endfor %}
+        </div>
+
+    <form class="mesaj-form" method="POST">
+        <input type="text" name="mesaj_kutusu" placeholder="Mesajınızı yazın..." size="50" autofocus>
+        <button type="submit">Gönder</button>
+    </form>
+    
+    <p style="text-align: center; margin-top: 10px;">
+        <a href="/temizle">Sohbet Geçmişini Temizle</a>
+    </p>
+
+    <script>
+        var chatBox = document.getElementById("chat-box");
+        chatBox.scrollTop = chatBox.scrollHeight;
+    </script>
+
+</body>
+</html>
