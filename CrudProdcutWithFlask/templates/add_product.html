@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block title %}Yeni Ürün Ekle{% endblock %}
+
+{% block content %}
+    <h2>Yeni Ürün Ekle</h2>
+    
+    <form method="POST" action="{{ url_for('add_product') }}">
+        <div>
+            <label for="name">Ürün Adı:</label>
+            <input type="text" id="name" name="name" required>
+        </div>
+        <div>
+            <label for="price">Fiyat:</label>
+            <input type="number" id="price" name="price" step="0.01" min="0" required>
+        </div>
+        <div>
+            <button type="submit">Ürünü Ekle</button>
+        </div>
+    </form>
+{% endblock %}

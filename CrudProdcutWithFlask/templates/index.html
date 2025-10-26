@@ -1,9 +1,11 @@
 {% extends 'base.html' %}
 
-{% block content %} 
-    <h1>Ürün Listesi</h1>
-    <a href="{{url_for('add_product')}}" class="add_link">Yeni Ürük Ekle</a>
+{% block title %}Tüm Ürünler{% endblock %}
 
+{% block content %}
+    <h2>Ürün Listesi</h2>
+    <a href="{{ url_for('add_product') }}" class="add-button">Yeni Ürün Ekle</a>
+    
     <table>
         <thead>
             <tr>
@@ -15,16 +17,23 @@
         </thead>
         <tbody>
             {% for product in products %}
-                <tr>
-                    <td>{{product.id}}</td>
-                    <td>{{product.name}}</td>
-                    <td>{{"%.2f" |format(product.price)}} TL</td>
-                    <td class="actions">
-                        <a href="{{url_for('edit_product', product_id = product.id)}}">Düzenle</a>
-                        <a href="{{url_for('edit_product', product_id = product.id)}}">Sil</a>
-                    </td>
-                </tr>
-            {% endfor%}
+            <tr>
+                <td>{{ product['id'] }}</td>
+                <td>{{ product['name'] }}</td>
+                <td>{{ "%.2f"|format(product['price']) }} ₺</td>
+                <td class="actions">
+                    <a href="{{ url_for('edit_product', product_id=product['id']) }}" class="edit">Düzenle</a>
+                    
+                    <form action="{{ url_for('delete_product', product_id=product['id']) }}" method="POST" style="display:inline;">
+                        <button type="submit" class="delete" onclick="return confirm('Bu ürünü silmek istediğinizden emin misiniz?');">Sil</button>
+                    </form>
+                </td>
+            </tr>
+            {% else %}
+            <tr>
+                <td colspan="4">Gösterilecek ürün bulunamadı.</td>
+            </tr>
+            {% endfor %}
         </tbody>
     </table>
-{% endblock%}
+{% endblock %}
